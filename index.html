@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+
+	<!-- link to jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    
+    <!-- link to Reset File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- link to Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<!-- link to Style CSS File -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-- Game Basics: Title and Instructions -->
+		<div class="jumbotron">
+			<!-- Game Name -->
+			<h1 class="text-center">Crystals Collector</h1>
+				
+			<!-- Game Instructions -->
+			<div id="instructions">
+				<ul>
+					<li> You will be given a random number at the start of the game.</li>
+					<li> There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+					<li> You WIN the game by matching your total score to the random number. You LOSE the game if your total score goes above the random number. </li>
+					<li> The value if each crystal is hidden from you until you click on it.</li>
+					<li> Each time the game starts, the game will change the values of each crystal.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- GAME! -->
+		<div class="row">
+			<!-- Number to Match -->
+	        <div class="col-md-8">
+				<h2>Number to Match: <span id="matchingNumber"></span></h2> 	
+			</div>
+			
+			<!-- Wins/Losses Scoreboard -->
+			<div class="col-md-4">
+				<h3>Wins: <span id="wins"></span></h3>
+				<h3>Losses: <span id="losses"></span> </h3>
+			</div>
+		</div>
+		
+		<!-- Crystals -->
+		<div class="row">
+	        <div class="col-md-12" id="crystals">
+				<!-- Crystal Images Go Here -->
+			</div>
+		</div>
+		
+		<!-- Player's Score -->
+		<div class="row">
+	        <div class="col-md-12" id="totalScore">
+				<h2>Your Total Score is: <span id ="yourTotalScore">0</span><span id ="status"></span></h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- adding Javascript file -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
