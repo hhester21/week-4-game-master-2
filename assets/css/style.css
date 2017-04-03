@@ -11,6 +11,12 @@ body {
     padding: 0;
     width: 100%;
 }
+footer{
+	text-align: center;
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	
+}
 
 .container {
 	margin: 0;
